@@ -1,0 +1,26 @@
+.form-check-input:checked {
+    background-color: #800000; /* Maroon color when toggled */
+    border-color: #800000; /* Maroon border when toggled */
+}
+
+.form-check-input:checked:focus {
+    box-shadow: 0 0 0 0.25rem rgba(128, 0, 0, 0.25); /* Maroon shadow when toggled and focused */
+}
+
+.form-check-input:checked + .form-check-label::before {
+    background-color: #800000; /* Maroon color for the switch background when toggled */
+}
+
+.card:hover{
+    box-shadow: 4px 4px 8px maroon;;
+    background-color: #D28A7C;
+}
+
+.nav-link.active{
+    background-color: maroon;
+    color: white;
+    
+}
+
+
+

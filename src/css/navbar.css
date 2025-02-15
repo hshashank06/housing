@@ -1,0 +1,15 @@
+
+.dropdown-item:hover{
+    background-color:#D28A7C ;
+}
+
+.dropdown-toggle:hover{
+    background-color:#D28A7C ;
+}
+
+.nav-link.active{
+    background-color: maroon !important;
+    color: white !important;
+    
+}
+
