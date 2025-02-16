@@ -33,13 +33,13 @@ export interface Place {
 }
 
 export default function TestPage() {
-  const [listOfStays, setListOfStays] = useState([
+  const listOfStays = useMemo(() => [
     "All Stays",
     "Norway",
     "Finland",
     "Sweden",
     "Switzerland",
-  ])
+  ], []);
   const [housingData, setHousingData] = useState<HousingData[]>([]);
   const [selectedStays, setSelectedStays] = useState<Place[]>([]);
   const [superHost,setSuperHost] = useState<boolean>(false);
