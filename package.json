@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/serviceworker": "^0.0.116",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
     "extendable-event": "^1.0.0",
     "react": "^19.0.0",
