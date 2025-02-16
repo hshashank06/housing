@@ -71,5 +71,5 @@ jobs:
         with:
           app-name: 'az-webapp-shashank'
           slot-name: 'Production'
-          package: .
+          package: release.zip
           
