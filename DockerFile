@@ -1,19 +1,23 @@
 FROM node:current-alpine
 
-LABEL org.opencontainers.image.title = "Home Stays" \
-        org.opencontainers.image.description = "Home Stays  web application to select rooms" \
-        org.opencontainers.image.authors = "Shashank" \
+LABEL org.opencontainers.image.title="Home Stays" \
+      org.opencontainers.image.description="Home Stays web application to select rooms" \
+      org.opencontainers.image.authors="Shashank"
 
- RUN mkdir -p /usr/src/app 
- 
- COPY . /usr/src/app
+# Create a directory for the application
+RUN mkdir -p /usr/src/app
 
- WORKDIR /usr/src/app
+# Set the working directory
+WORKDIR /usr/src/app
 
- RUN npm install
+# Copy the application code to the container
+COPY . /usr/src/app
 
- EXPOSE 3000
+# Install dependencies
+RUN npm install
 
- CMD ["npm", "start"]
+# Expose the port the app runs on
+EXPOSE 3000
 
-
+# Start the application
+ENTRYPOINT ["npm", "start"]
